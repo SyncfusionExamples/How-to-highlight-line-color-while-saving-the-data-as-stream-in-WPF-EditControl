@@ -34,12 +34,6 @@ namespace EditControl_Text
             _editor = new EditControl() { Height = 400, Width = 400, Background = Brushes.White, Foreground = Brushes.Black };
             this.Content = _editor;
             _editor.DocumentLanguage = Languages.Text;
-            _editor.IsAutoIndentationEnabled = true;
-            _editor.IndentingOptions = IndentingOptions.Smart;
-            _editor.TabKeyBehavior = TabKeyBehavior.Default;
-            _editor.TabSpaces = 4;
-            _editor.ShowFindAndReplace = true;
-            _editor.ShowLineNumber = true;
             _editor.Text = GetFileText();
             _editor.PreviewKeyUp += OnPreviewKeyUp;
             _editor.PreviewKeyDown += OnPreviewKeyDown;
